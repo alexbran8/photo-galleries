@@ -40,7 +40,7 @@ function App() {
   return (
   <div className="app">
     <div className="heading">
-      <h1>Gallery Template #1</h1>
+      <h1>Simple Gallery Template #1</h1>
     </div>
 
     <div className="input">
