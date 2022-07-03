@@ -1,0 +1,16 @@
+.navbar {
+    top:0;
+    /* border: 1px solid red; */
+    width:100%;
+    position:fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.navbar .navbar-item {
+    padding: 5px;
+    /* color: red; */
+    /* border: 1px solid red; */
+}
