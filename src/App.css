@@ -38,7 +38,8 @@ button:active {
 .card {
   padding: 5px;
   width: auto;
-  height: 30rem;
+  height: auto;
+  /* border: 2px solid red; */
 }
 .result {
   display: flex; flex-wrap: wrap;
