@@ -1,20 +1,24 @@
 * {
   margin: 0;
   background-color: rgb(236, 221, 226);
-  }.app {
+}
+.app {
   display: flex;
   padding-top: 50px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  }.input {
+}
+.input {
   padding: 10px 20px;
-  }.input > input {
+}
+.input > input {
   border: 1px solid black;
   border-radius: 5px;
   width: 300px;
   padding: 10px 20px;
-  }button {
+}
+button {
   padding: 10px 20px;
   margin-bottom: 20px;
   width: 300px;
@@ -22,30 +26,56 @@
   border-radius: 5px;
   border: none;
   background-color: rgb(4, 100, 243);
-  }button:hover {
+}
+button:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(58, 71, 90);
-  }button:active {
+}
+button:active {
   background-color: cornflowerblue;
   width: 290px;
-  }.card {
+}
+.card {
   padding: 5px;
   width: auto;
-  height: auto;
-  }.result {
-  display: grid;
-  grid-column-gap: 5px;
-  grid-template-columns: auto auto auto;
-  width: auto;
-  height: auto;
-  }.result > img {
-  flex-wrap: nowrap;
+  height: 30rem;
+}
+.result {
+  display: flex; flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+.result > img {
+  display: flex; /* displays flex-items (children) inline */
+  flex-wrap: wrap; /* enables them to wrap (default: nowrap) */
+  /* 16:9 ratio */
+  width: 160px;
+  height: 90px;
   margin: 5px;
-  }.username{
-  width: 200px;
-  }@media screen and (max-width: 700px) {
-   .result {
+}
+
+img {
+  float: left;
+  width:  20rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.flex > div {
+  flex-grow: 1; /* enabled (default: 0); can grow/expand beyond 50% of the parent's width */
+  flex-basis: 50%; /* initial width set to 50% because none of the items will be less than that, no matter how many of them */
+  border: 1px solid; /* just to see the result better */
+  box-sizing: border-box; /* recommended because of the border; otherwise you'd need to use the CSS calc() function: "flex-basis: calc(50% - 2px);" -2px because of the left and right border, which is 1px each; same applies for margins, if you're going to use them, then you also need to use the calc(), e.g.: calc(x% - twice the defined margin) */
+  background: #eff0f1;
+}
+
+.username {
+  /* width: 200px; */
+}
+/* @media screen and (max-width: 700px) {
+  .result {
     display: flex;
     flex-direction: column;
-   }
   }
+} */
